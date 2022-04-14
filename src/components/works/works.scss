@@ -1,3 +1,70 @@
+@import '../../variables.scss';
+
 .works{
-    background-color: lightcyan;
+    background-color: green;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+
+    .arrow{
+        font-size: 50px;
+        position: absolute;
+        cursor: pointer;
+
+        &.left{
+            left: 100px;
+        }
+        
+        &.right{
+            right: 100px;
+            transform: rotate(180deg);
+        }
+    }
+    
+    .slider{
+        height: 450px;
+        display: flex;        
+        position: absolute;
+        left: 0;
+
+        transition: all 2s ease;
+
+        .container{
+            background-color: aqua;
+            width: 100vw;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .item{
+                background-color: $secColor;
+                width: 60%;
+                height: 100%;
+                border-radius: 50px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .left{
+                    flex: 4;
+                    height: 80%;
+                    background-color: yellow;
+                }
+                
+                .right{
+                    flex: 8;
+                    height: 80%;
+                    background-color: red;
+                }
+
+            }
+
+        }
+    }
 }

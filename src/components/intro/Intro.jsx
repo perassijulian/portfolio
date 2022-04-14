@@ -1,5 +1,5 @@
 import './intro.scss';
-import {ArrowBackIos} from '@material-ui/icons';
+import { ArrowBackIos } from '@material-ui/icons';
 
 const Intro = () => {
   return (

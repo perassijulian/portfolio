@@ -51,3 +51,22 @@ export const frontendData = [
         img: "https://images.pexels.com/photos/261579/pexels-photo-261579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     },
 ]
+
+export const worksData = [
+    {
+        id: 1,
+        title: "ECOMMERCE SHOP",
+        img: "https://images.pexels.com/photos/2118494/pexels-photo-2118494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        id: 2,
+        title: "BARBER SERVICES",
+        img: "https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        id: 3,
+        title: "BLOG",
+        img: "https://images.pexels.com/photos/261579/pexels-photo-261579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+]
+
