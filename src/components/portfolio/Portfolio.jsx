@@ -1,35 +1,35 @@
 import { useEffect, useState } from 'react';
 import PortfolioList from '../portfolioList/PortfolioList';
 import {
-  fullstackData,
+  backendData,
   web3Data,
   frontendData,
 } from '../../data';
 import './portfolio.scss';
 
 const Portfolio = () => {
-  const [selected, setSelected] = useState("fullstack")
+  const [selected, setSelected] = useState("backend")
   const [data, setData] = useState([])
 
   const list = [
     {
-      id: "fullstack",
-      title: "fullstack"
+      id: "backend",
+      title: "Back End"
     },   
     {
-      id: "frontEnd",
-      title: "front end"
+      id: "frontend",
+      title: "Front End"
     },   
     {
       id: "web3",
-      title: "crypto (web3)"
+      title: "Crypto"
     },   
   ]
 
   useEffect(() => {
     switch (selected) {
-      case 'fullstack':
-        setData(fullstackData)
+      case 'backend':
+        setData(backendData)
         break;
       case 'web3':
         setData(web3Data)
@@ -38,14 +38,14 @@ const Portfolio = () => {
         setData(frontendData)
         break;
       default:
-        setData(fullstackData)
+        setData(backendData)
         break;
     }
   }, [selected])
   
   return (
     <div className='portfolio' id='portfolio'>
-      <h1>Portfolio</h1>
+      <h1>Stacks I use</h1>
       <ul>
         {list.map(item=>
           <PortfolioList 

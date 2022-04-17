@@ -1,13 +1,19 @@
 @import '../../variables.scss';
 
 .works{
-    background-color: green;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
     
     position: relative;
+    overflow-x: hidden;
+
+    &--title{
+        position: absolute;
+        top: 100px;
+        font-size: $bFont;
+    }
 
     .arrow{
         font-size: 50px;
@@ -33,7 +39,6 @@
         transition: all 2s ease;
 
         .container{
-            background-color: aqua;
             width: 100vw;
             height: 100%;
 
