@@ -3,7 +3,9 @@ import './contact.scss';
 const Contact = () => {
   return (
     <div className='contact' id='contact'>
-      <div className='left'></div>
+      <div className='left'>
+        <img src="assets/shake.svg" alt='contact' />
+      </div>
       <div className='right'>
         <h1>Contact</h1>
         <form>

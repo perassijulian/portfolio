@@ -25,14 +25,14 @@
             align-items: center;
 
             h2{
-                font-size: 24px;
+                font-size: $mFont;
                 font-weight: 800;
 
             }
 
             &--itemContainer{
 
-                margin-left: 24px;
+                margin-left: 48px;
                 display: flex;
                 align-items: center;
 

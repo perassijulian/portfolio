@@ -34,9 +34,16 @@ const Works = () => {
             <div className='item'>
               <div className='left'>
                 <h1>{d.title}</h1>
+                <p>{d.desc}</p>
+                <div className='buttons'>
+                  <button>LIVE DEMO</button>
+                  <a href={d.github}>
+                    <button>GITHUB</button>
+                  </a>
+                </div>
               </div>
               <div className='right'>
-                <h1>6556465</h1>
+                <img src={d.img} alt='work screenshot'/>
               </div>
             </div>
           </div>

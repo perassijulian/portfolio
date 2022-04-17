@@ -6,6 +6,9 @@
 
     .left{
         flex: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
     }
 
     .right{
@@ -47,6 +50,7 @@
                 background-color: green;
                 border: none;
                 border-radius: 4px;
+                cursor: pointer;
             }
         }
     }
