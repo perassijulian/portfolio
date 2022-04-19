@@ -73,7 +73,7 @@ export const worksData = [
         title: "ECOMMERCE SHOP",
         desc: "Website for the sale of skateboarding articles. It has the functionality to register as a customer and log in using JWT technology. It allows to catalog the products within different categories and then filter them with respect to them. It allows to add the desired products to the cart and once the purchase is completed add the payment through Stripe solutions. Made fullstack with MERN stack. Possibility to adapt it to any type of ecommerce.",
         img: "assets/skatown.JPG",
-        demo: "http://alsd.sd",
+        demo: "https://skatown-ecommerce.herokuapp.com/",
         github: "https://github.com/perassijulian/ecommerce"
     },
     {

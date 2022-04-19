@@ -36,14 +36,16 @@ const Works = () => {
                 <h1>{d.title}</h1>
                 <p>{d.desc}</p>
                 <div className='buttons'>
-                  <button>LIVE DEMO</button>
-                  <a href={d.github}>
-                    <button>GITHUB</button>
+                  <a href={d.demo} target="_blank" rel="noreferrer noopener">
+                    <button className='demo'>LIVE DEMO</button>
+                  </a>
+                  <a href={d.github} target="_blank" rel="noreferrer noopener">
+                    <button className='github'>GITHUB</button>
                   </a>
                 </div>
               </div>
               <div className='right'>
-                <img src={d.img} alt='work screenshot'/>
+                <img src={d.img} alt='screenshot showcase' />
               </div>
             </div>
           </div>
