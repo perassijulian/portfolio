@@ -6,7 +6,7 @@ const Topbar = ({ menuActive, setMenuActive }) => {
     <div className={`topbar ${menuActive? "active" : ""}`}>
       <div className='topbar--wrapper'>
         <div className='topbar--wrapper--left'>
-          <h2>perassi .</h2>
+          <h2 className='logo'>perassi .</h2>
           <div className='topbar--wrapper--left--itemContainer'>
             <Person className='topbar--wrapper--left--itemContainer--icon' />
             <span>+54 9 341 376 0355</span>

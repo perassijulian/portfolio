@@ -91,4 +91,10 @@
             }
         }
     }
+
+    @include mobile {
+        .topbar--wrapper--left--itemContainer{
+            display: none;
+        }
+    }
 }
