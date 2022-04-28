@@ -23,6 +23,7 @@
         }
 
         form{
+            margin-top: 16px;
             height: 550px;
             display: flex;
             flex-direction: column;
@@ -52,6 +53,12 @@
                 border-radius: 4px;
                 cursor: pointer;
             }
+        }
+    }
+
+    @include mobile {
+        .left{
+            display: none;
         }
     }
 }
