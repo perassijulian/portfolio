@@ -9,10 +9,10 @@ const Menu = ({ menuActive, setMenuActive }) => {
                 <a href='#intro'>home</a>
             </li>
             <li onClick={() => {setMenuActive(false)}}>
-                <a href='#portfolio'>stacks</a>
+                <a href='#works'>works</a>
             </li>
             <li onClick={() => {setMenuActive(false)}}>
-                <a href='#works'>works</a>
+                <a href='#portfolio'>stacks</a>
             </li>
             <li onClick={() => {setMenuActive(false)}}>
                 <a href='#contact'>contact</a>

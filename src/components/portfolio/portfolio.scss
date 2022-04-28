@@ -21,12 +21,12 @@
     .wrapper{
         width: 70%;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
 
-
         .item{
-            width: 30%;
-            height: 300px;
+            width: 21vw;
+            height: 17vw;
             border-radius: 10px;
             border: 1px solid lightgray;
             margin: 12px;
@@ -61,4 +61,13 @@
         }
     }
 
+    @include mobile{
+        .wrapper{
+            .item{
+                width: 28vw;
+                height: 32vw;
+            }
+        }
+        
+    }
 }

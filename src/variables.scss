@@ -6,3 +6,11 @@ $secColor: #8560af;
 $bFont: 56px;
 $mFont: 36px;
 $sFont: 28px;
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}

@@ -126,4 +126,34 @@
 
         }
     }
+    @include mobile {
+        &--title{
+            top: 40px;
+            font-size: $mFont;
+        }
+        .arrow{
+            font-size: 40px;
+            
+            &.left{
+                left: 10px;
+            }
+            
+            &.right{
+                right: 10px;
+                
+            }
+        }
+
+        .slider{
+            .container{
+                .item{
+                    width: 80%;
+
+                    .right{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
