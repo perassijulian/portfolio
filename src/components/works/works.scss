@@ -145,9 +145,19 @@
         }
 
         .slider{
+            *{
+                border: 1px solid red;
+            }
             .container{
+
+                
                 .item{
-                    width: 80%;
+                    width: 80%;                        
+
+                    .left{
+                        height: 90%;
+                        
+                    }
 
                     .right{
                         display: none;
