@@ -6,7 +6,7 @@ const Intro = () => {
     <div className='intro' id='intro'>
       <div className='left'>
         <div className='imgContainer'>
-          <img src='assets/julian.png' alt='profile'></img>
+          <img src='assets/julian.png' alt='profile' />
         </div>
       </div>
       <div className='right'>
@@ -15,10 +15,11 @@ const Intro = () => {
           <h1>Julian Perassi</h1>
           <h3>fullstack developer</h3>
         </div>
-        <ArrowBackIos className='arrow'/>
+        <a href="#portfolio">
+          <ArrowBackIos className='arrow'/>
+        </a>
       </div>
     </div>
   )
 }
-
 export default Intro

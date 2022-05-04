@@ -2,18 +2,23 @@
 
 .app{
     height: 100vh;
-}
 
-.sections{
-    width: 100%;
-    height: calc(100vh - $topbarHeigth);
-    position: relative;
-    top: $topbarHeigth;
-    background-color: red;
-    scroll-behavior: smooth;
-
-    > * {
+    .sections{
         width: 100%;
         height: calc(100vh - $topbarHeigth);
+        position: relative;
+        top: $topbarHeigth;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; 
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        > *{
+            width: 100vw;
+            height: calc(100vh - $topbarHeigth);
+            scroll-snap-align: start;
+        }
     }
 }

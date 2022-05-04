@@ -1,16 +1,23 @@
 $topbarHeigth: 60px;
 
 $mainColor: black;
-$secColor: #8560af;
+$secColor: #00684a;
 
 $bFont: 56px;
 $mFont: 36px;
 $sFont: 28px;
 
-$width: 768px;
+$widthMob: 720px;
+$widthForb: 421px;
 
 @mixin mobile {
-    @media (max-width: #{$width}){
+    @media (max-width: #{$widthMob}){
         @content
     }
-}
+};
+
+@mixin forbidden {
+    @media (max-width: #{$widthForb}){
+        @content
+    }
+};
