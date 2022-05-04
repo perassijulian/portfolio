@@ -1,64 +1,80 @@
-@import '../../variables.scss';
+@import "../../global.scss";
 
-.contact{
-    background-color: white;
+.contact {
+  background-color: white;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    flex: 1;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    .left{
-        flex: 1;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+    h2 {
+      font-size: 30px;
     }
 
-    .right{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
 
-        h1{
-            font-size: $bFont;
+      input {
+        width: 300px;
+        height: 30px;
+        font-size: 14px;
+
+        @include mobile {
+          width: 200px;
+          height: 20px;
         }
+      }
 
-        form{
-            margin-top: 16px;
-            height: 550px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+      textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
 
-            input{
-                width: 400px;
-                height: 40px;
-                font-size: $sFont;
-                padding: 4px;
-            }
-
-            textarea{
-                width: 400px;
-                height: 400px;
-                font-size: $sFont;
-                padding: 4px;
-            }
-            
-            button{
-                width: 200px;
-                height: 40px;
-                color: white;
-                background-color: green;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
+        @include mobile {
+          width: 200px;
+          height: 100px;
         }
+      }
+
+      button {
+        width: 150px;
+        height: 30px;
+        color: white;
+        background-color: crimson;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      span {
+        color: green;
+      }
     }
-
-    @include mobile {
-        .left{
-            display: none;
-        }
-    }
+  }
 }

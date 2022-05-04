@@ -1,31 +1,31 @@
-import './topbar.scss';
-import {Person, Mail} from '@material-ui/icons';
+import "./topbar.scss";
+import { Person, Mail } from "@material-ui/icons";
 
-const Topbar = ({ menuActive, setMenuActive }) => {
+export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className={`topbar ${menuActive? "active" : ""}`}>
-      <div className='topbar--wrapper'>
-        <div className='topbar--wrapper--left'>
-          <h2 className='logo'>perassi .</h2>
-          <div className='topbar--wrapper--left--itemContainer'>
-            <Person className='topbar--wrapper--left--itemContainer--icon' />
-            <span>+54 9 341 376 0355</span>
+    <div className={"topbar " + (menuOpen && "active")}>
+      <div className="wrapper">
+        <div className="left">
+          <a href="#intro" className="logo">
+            genius.
+          </a>
+          <div className="itemContainer">
+            <Person className="icon" />
+            <span>+44 924 12 74</span>
           </div>
-          <div className='topbar--wrapper--left--itemContainer'>
-            <Mail className='topbar--wrapper--left--itemContainer--icon' />
-            <span>perassijulian@gmail.com</span>
+          <div className="itemContainer">
+            <Mail className="icon" />
+            <span>safak@genius.com</span>
           </div>
         </div>
-        <div className='topbar--wrapper--right'>
-          <div className='hamburguer' onClick={() => setMenuActive(!menuActive)}>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div className="right">
+          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
-
-export default Topbar

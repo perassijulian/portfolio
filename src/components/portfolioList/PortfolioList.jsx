@@ -1,15 +1,12 @@
-import './portfolioList.scss';
+import "./portfolioList.scss";
 
-const PortfolioList = ({ title, id, active, setSelected }) => {
+export default function PortfolioList({ id, title, active, setSelected }) {
   return (
-    <li 
-        className={`portfolioList ${active? "active" : ""}`}
-        id={id}
-        onClick={() => {setSelected(id)}}
+    <li
+      className={active ? "portfolioList active" : "portfolioList"}
+      onClick={() => setSelected(id)}
     >
-        {title}
+      {title}
     </li>
-  )
+  );
 }
-
-export default PortfolioList

@@ -1,25 +1,18 @@
-@import '../../variables.scss';
+@import "../../global.scss";
 
+.portfolioList {
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
 
-.portfolioList{
-    margin: 16px;
-    padding: 8px;
+  @include mobile{
+    margin-right: 20px;
+  }
 
-    font-size: $sFont;
-    font-weight: 500;
-    cursor: pointer;
-
-    &:hover{
-        background-color: lightgray;
-        border-radius: 4px;
-    }
-
-    &.active{
-        background-color: $secColor;
-        border-radius: 4px;
-    }
-
-    @include mobile{
-        font-size: 20px;
-    }
+  &.active {
+    background-color: $mainColor;
+    color: white;
+  }
 }

@@ -1,41 +1,27 @@
-import './contact.scss';
-import emailjs from 'emailjs-com';
-import { useState } from 'react';
+import { useState } from "react";
+import "./contact.scss";
 
-const Contact = () => {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+export default function Contact() {
+  const [message, setMessage] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const templateParams = {
-        email,
-        message,
-    };
-    
-    emailjs.send("service_dir750i", "template_m224s1c", templateParams, "k2O5a1s8kkwPa8qoE")
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      }, (err) => {
-        console.log('FAILED...', err);
-      });
-  }
-
+    setMessage(true);
+  };
   return (
-    <div className='contact' id='contact'>
-      <div className='left'>
-        <img src="assets/shake.svg" alt='contact' />
+    <div className="contact" id="contact">
+      <div className="left">
+        <img src="assets/shake.svg" alt="" />
       </div>
-      <div className='right'>
-        <h1>Contact</h1>
+      <div className="right">
+        <h2>Contact.</h2>
         <form onSubmit={handleSubmit}>
-          <input type='email' placeholder='email' onChange={(e) => setEmail(e.target.value)} ></input>
-          <textarea placeholder='comments' onChange={(e) => setMessage(e.target.value)}></textarea>
-          <button type='submit'>SUBMIT</button>
+          <input type="text" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+          {message && <span>Thanks, I'll reply ASAP :)</span>}
         </form>
       </div>
     </div>
-  )
+  );
 }
-
-export default Contact
