@@ -3,39 +3,60 @@
 .portfolio{
     background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     h1{
         font-size: $bFont;
-        margin-top: 88px;
+        // margin-top: 88px;
     }
 
     ul{
         list-style: none;
         display: flex;
 
+        @include mobile{
+            margin: 10px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
     }
 
     .wrapper{
         width: 70%;
         display: flex;
+        align-items: center;
         justify-content: center;
         flex-wrap: wrap;
 
+        @include mobile{
+            width: 100%;
+        }
+
         .item{
-            width: 21vw;
-            height: 17vw;
-            border-radius: 10px;
+            // width: 21vw;
+            // height: 17vw;
+            // border-radius: 10px;
+            width: 220px;
+            height: 150px;
+            border-radius: 20px;
             border: 1px solid lightgray;
-            margin: 12px;
+            // margin: 12px;
+            margin: 10px 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             position: relative;
+            transition: all .5s ease;;
             cursor: pointer;
+
+            @include mobile{
+                width: 130px;
+                height: 100px;
+            }
         
             h3{
                 position: absolute;
@@ -59,15 +80,5 @@
                 }
             }
         }
-    }
-
-    @include mobile{
-        .wrapper{
-            .item{
-                width: 28vw;
-                height: 32vw;
-            }
-        }
-        
     }
 }
