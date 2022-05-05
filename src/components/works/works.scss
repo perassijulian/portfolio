@@ -12,17 +12,25 @@
     position: absolute;
     cursor: pointer;
 
-    @include mobile {
-      display: none;
-    }
+    // @include mobile {
+    //   display: none;
+    // }
 
     &.left {
       left: 100px;
       transform: rotateY(180deg);
+      
+      @include mobile {
+        left: 0px;
+      }
     }
 
     &.right {
       right: 100px;
+      
+      @include mobile {
+        right: 0px;
+      }
     }
   }
 
@@ -39,8 +47,8 @@
 
     @include mobile {
       height: 100vh;
-      flex-direction: column;
-      justify-content: center;
+      // flex-direction: column;
+      // justify-content: center;
     }
 
     .container {
@@ -63,8 +71,10 @@
         }
 
         @include mobile {
+          flex-direction:column-reverse;
+          justify-content: center;
           width: 80%;
-          height: 150px;
+          height: 80%;
           margin: 15px 0;
         }
 
@@ -91,7 +101,7 @@
               }
 
               @include mobile{
-                font-size: 13px;
+                font-size: 18px;
               }
             }
             p {
@@ -103,7 +113,7 @@
               }
 
               @include mobile{
-                display: none;
+                font-size: 15px;
               }
             }
 
@@ -145,10 +155,17 @@
           align-items: center;
           justify-content: center;
           overflow: hidden;
+          @include mobile {
+            flex: 2;
+          }
 
           img {
             width: 600px;
             transform: rotate(-10deg);
+            
+            @include mobile {
+              width: 100%;
+            }
           }
         }
       }
