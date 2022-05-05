@@ -1,9 +1,23 @@
 $mainColor: #15023a;
+$secColor: crimson;
+
+$xxlSize: 60px;
+$xlSize: 50px;
+$lSize: 40px;
+$mSize: 35px;
+$sSize: 30px;
 
 $width: 768px;
+$bigWidth: 1367px;
 
 @mixin mobile {
     @media (max-width: #{$width}){
+        @content
+    }
+};
+
+@mixin bigScreen {
+    @media (min-width: #{$bigWidth}){
         @content
     }
 }

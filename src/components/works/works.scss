@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .works {
-  background-color: crimson;
+  background-color: $secColor;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,6 +33,10 @@
     left: 0;
     transition: all 1s ease-out;
 
+    @include bigScreen{
+      height: 500px;
+    }
+
     @include mobile {
       height: 100vh;
       flex-direction: column;
@@ -53,6 +57,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include bigScreen{
+          width: 1000px;
+        }
 
         @include mobile {
           width: 80%;

@@ -16,19 +16,24 @@
     .imgContainer {
       width: 700px;
       height: 700px;
-      background-color: crimson;
+      background-color: $secColor;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
       float: right;
 
+      @include bigScreen{
+        width: 900px;
+        height: 900px;
+      }
+
       @include mobile{
         align-items: flex-start;
       }
 
       img {
-        height: 90%;
+        height: 100%;
 
         @include mobile{
           height: 50%;
@@ -54,30 +59,33 @@
       }
 
       h1 {
-        font-size: 60px;
+        font-size: $xxlSize;
         margin: 10px 0;
 
+        @include bigScreen{
+          font-size: 80px;
+        }
+
         @include mobile{
-          font-size: 40px;
+          font-size: $lSize;
         }
       }
       h2 {
-        font-size: 35px;
+        font-size: $mSize;
+
+        @include bigScreen{
+          font-size: $xlSize;
+        }
       }
       h3 {
-        font-size: 30px;
+        font-size: $sSize;
+
+        @include bigScreen{
+          font-size: $lSize;
+        }
 
         @include mobile{
           font-size: 20px;
-        }
-
-        span {
-          font-size: inherit;
-          color: crimson;
-        }
-
-        .ityped-cursor {
-          animation: blink 1s infinite;
         }
 
         @keyframes blink {

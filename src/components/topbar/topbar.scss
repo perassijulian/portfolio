@@ -40,11 +40,19 @@
         .icon {
           font-size: 18px;
           margin-right: 5px;
+
+          @include bigScreen {
+            font-size: 22px;
+          }
         }
 
         span {
           font-size: 15px;
           font-weight: 500;
+          
+          @include bigScreen {
+            font-size: 19px;
+          }
         }
       }
     }

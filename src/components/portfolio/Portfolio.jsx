@@ -2,64 +2,49 @@ import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
-} from "../../data";
+  backendData,
+  web3Data,
+  frontendData,
+} from '../../data';
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
   const list = [
     {
-      id: "featured",
-      title: "Featured",
-    },
+      id: "backend",
+      title: "Back End"
+    },   
     {
-      id: "web",
-      title: "Web App",
-    },
+      id: "frontend",
+      title: "Front End"
+    },   
     {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
+      id: "web3",
+      title: "Crypto"
     },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
+      case 'backend':
+        setData(backendData)
         break;
-      case "web":
-        setData(webPortfolio);
+      case 'web3':
+        setData(web3Data)
         break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
+      case 'frontend':
+        setData(frontendData)
         break;
       default:
-        setData(featuredPortfolio);
+        setData(backendData)
+        break;
     }
   }, [selected]);
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>Stacks I use</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList
