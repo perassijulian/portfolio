@@ -70,7 +70,7 @@
 
         .left {
           flex: 4;
-          height: 80%;
+          height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -82,30 +82,13 @@
             flex-direction: column;
             justify-content: space-between;
 
-            .imgContainer {
-              width: 40px;
-              height: 40px;
-              border-radius: 50%;
-              background-color: rgb(245, 179, 155);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-
-              @include mobile {
-                width: 20px;
-                height: 20px;
-              }
-
-              img {
-                width: 25px;
-
-                @include mobile {
-                  width: 15px;
-                }
-              }
-            }
             h2 {
               font-size: 20px;
+              text-align: center;
+
+              @include bigScreen{
+                font-size: $sSize;
+              }
 
               @include mobile{
                 font-size: 13px;
@@ -113,15 +96,45 @@
             }
             p {
               font-size: 13px;
+              text-align: justify;
+
+              @include bigScreen{
+                font-size: 17px;
+              }
+
               @include mobile{
                 display: none;
               }
             }
-            span {
-              font-size: 12px;
-              font-weight: 600;
-              text-decoration: underline;
-              cursor: pointer;
+
+            .buttons{
+              width: 100%;
+              display: flex;
+              justify-content: space-around;
+
+              .demo{
+                background-color: green;
+              }
+
+              .github{
+                background-color: black;
+              }
+
+              button{
+                width: 100px;
+                height: 24px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                color: white;
+                font-weight: 500;
+
+                @include bigScreen{
+                  width: 125px;
+                  height: 30px;
+                  font-size: 15px;
+                }
+              }
             }
           }
         }
@@ -134,7 +147,7 @@
           overflow: hidden;
 
           img {
-            width: 400px;
+            width: 600px;
             transform: rotate(-10deg);
           }
         }
