@@ -78,17 +78,17 @@ export const worksData = [
     },
     {
         id: 2,
-        title: "BARBER SERVICES",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum interdum magna sed varius. Vestibulum quis sem erat. Suspendisse in vestibulum nulla. Mauris vulputate, arcu laoreet congue bibendum, nisl lorem consectetur elit, vitae tristique massa leo sit amet tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ut enim in enim laoreet placerat ut.",
-        img: "https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    },
-    {
-        id: 3,
         title: "BLOG",
         desc: "Blog page made with stack MERN and redux. It allows to add new posts with their respective image, description, date, author, author photo and category. Its topbar dynamically groups these categories and displays all posts that are within the same topic. It also includes a search engine for particular topics. Clicking on the article redirects you to its page.",
         img: "assets/blog.JPG",
         demo: "https://blog-perassi.herokuapp.com/",
         github: "https://github.com/perassijulian/blog-upwork"
+    },
+    {
+        id: 3,
+        title: "BARBER SERVICES",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum interdum magna sed varius. Vestibulum quis sem erat. Suspendisse in vestibulum nulla. Mauris vulputate, arcu laoreet congue bibendum, nisl lorem consectetur elit, vitae tristique massa leo sit amet tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ut enim in enim laoreet placerat ut.",
+        img: "https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     },
 ]
 

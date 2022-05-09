@@ -1,6 +1,8 @@
 $mainColor: #15023a;
 $secColor: crimson;
 
+$topbarHeigth: 70px;
+
 $xxlSize: 60px;
 $xlSize: 50px;
 $lSize: 40px;
@@ -20,4 +22,4 @@ $bigWidth: 1367px;
     @media (min-width: #{$bigWidth}){
         @content
     }
-}
+};
