@@ -79,7 +79,7 @@ export const worksData = [
     {
         id: 2,
         title: "BLOG",
-        desc: "Blog page made with stack MERN and redux. It allows to add new posts with their respective image, description, date, author, author photo and category. Its topbar dynamically groups these categories and displays all posts that are within the same topic. It also includes a search engine for particular topics. Clicking on the article redirects you to its page.",
+        desc: "Blog page made with stack MERN. Allows to create user with JWT technology. Once logged in, it allows to add new posts with their respective image. Clicking on the article redirects to its page. Uses queries to group posts made by the same user or to group them by categories.",
         img: "assets/blog.JPG",
         demo: "https://blog-perassi.herokuapp.com/",
         github: "https://github.com/perassijulian/blog-upwork"
