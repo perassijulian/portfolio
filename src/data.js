@@ -71,7 +71,7 @@ export const worksData = [
     {
         id: 1,
         title: "ECOMMERCE SHOP",
-        desc: "Website for the sale of skateboarding articles. You can register as a customer and log in using JWT technology. It allows to catalog the products within different categories and then filter them. It allows to add the desired products to the cart and once the purchase is completed add the payment through Stripe solutions. Made fullstack with MERN stack. Possibility to adapt it to any type of ecommerce.",
+        desc: "Website for the sale of skateboarding articles. You can register as a customer and log in using JWT technology. It allows to catalog the products within different categories. It allows to add the desired products to the cart and once the purchase is completed add the payment through Stripe solutions. Made fullstack with MERN stack and control state through Redux toolkit.",
         img: "assets/skatown.JPG",
         demo: "https://skatown-ecommerce.herokuapp.com/",
         github: "https://github.com/perassijulian/ecommerce"
@@ -79,16 +79,18 @@ export const worksData = [
     {
         id: 2,
         title: "BLOG",
-        desc: "Blog page made with stack MERN. Allows to create user with JWT technology. Once logged in, it allows to add new posts with their respective image. Clicking on the article redirects to its page. Uses queries to group posts made by the same user or to group them by categories.",
+        desc: "Blog page made with stack MERN. Allows to create user and encrypt its password using bcrypt. Once logged in, it allows to add new posts with their respective image. Clicking on the article redirects to its page. Uses queries to group posts made by the same user or to group them by categories.",
         img: "assets/blog.JPG",
         demo: "https://blog-perassi.herokuapp.com/",
         github: "https://github.com/perassijulian/blog-upwork"
     },
     {
         id: 3,
-        title: "BARBER SERVICES",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum interdum magna sed varius. Vestibulum quis sem erat. Suspendisse in vestibulum nulla. Mauris vulputate, arcu laoreet congue bibendum, nisl lorem consectetur elit, vitae tristique massa leo sit amet tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ut enim in enim laoreet placerat ut.",
-        img: "https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        title: "BOOKING",
+        desc: "Clone of the booking website. Realized with the MERN stack. Allows to register a user and log in using JWT technology. Currently only the front end is done but it will allow filtering properties by location, size, type and availability of dates. You can check its source code in my github but there is not a live version available yet.",
+        img: "assets/booking.JPG",
+        demo: "https://github.com/perassijulian/booking",
+        github: "https://github.com/perassijulian/booking"
     },
 ]
 
