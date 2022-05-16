@@ -87,9 +87,9 @@ export const worksData = [
     {
         id: 3,
         title: "BOOKING",
-        desc: "Clone of the booking website. Realized with the MERN stack. Allows to register a user and log in using JWT technology. Currently only the front end is done but it will allow filtering properties by location, size, type and availability of dates. You can check its source code in my github but there is not a live version available yet.",
+        desc: "Clone of the booking website. Built with MERN stack. Allows user registration and login using JWT technology. State handling using useContext. Allows to register lodgings and their respective rooms. These rooms can be reserved for certain dates, disabling them so that another user cannot take them on the same days.",
         img: "assets/booking.JPG",
-        demo: "https://github.com/perassijulian/booking",
+        demo: "https://booking-perassi.herokuapp.com/",
         github: "https://github.com/perassijulian/booking"
     },
 ]
