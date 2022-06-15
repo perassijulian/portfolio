@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./works.scss";
-import { worksData } from '../../data';
+import { worksData } from "../../data";
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,9 +8,11 @@ export default function Works() {
   const handleClick = (way) => {
     way === "left"
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
-      : setCurrentSlide(currentSlide < worksData.length - 1 ? currentSlide + 1 : 0);
+      : setCurrentSlide(
+          currentSlide < worksData.length - 1 ? currentSlide + 1 : 0
+        );
   };
-  
+
   return (
     <div className="works" id="works">
       <div
@@ -23,22 +25,24 @@ export default function Works() {
               <div className="left">
                 <div className="leftContainer">
                   <h2>{d.title}</h2>
+                  {d.web3 && <h3>web3</h3>}
                   <p>{d.desc}</p>
-                  <div className='buttons'>
-                  <a href={d.demo} target="_blank" rel="noreferrer noopener">
-                    <button className='demo'>LIVE DEMO</button>
-                  </a>
-                  <a href={d.github} target="_blank" rel="noreferrer noopener">
-                    <button className='github'>GITHUB</button>
-                  </a>
-                </div>
+                  <div className="buttons">
+                    <a href={d.demo} target="_blank" rel="noreferrer noopener">
+                      <button className="demo">LIVE DEMO</button>
+                    </a>
+                    <a
+                      href={d.github}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <button className="github">GITHUB</button>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className="right">
-                <img
-                  src={d.img}
-                  alt="site showcase"
-                />
+                <img src={d.img} alt="site showcase" />
               </div>
             </div>
           </div>

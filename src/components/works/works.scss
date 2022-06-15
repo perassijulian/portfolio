@@ -35,7 +35,7 @@
   }
 
   .slider {
-    height: 350px;
+    height: 370px;
     display: flex;
     position: absolute;
     left: 0;
@@ -87,7 +87,7 @@
 
           .leftContainer {
             width: 90%;
-            height: 70%;
+            height: 80%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -104,6 +104,21 @@
                 font-size: 18px;
               }
             }
+
+            h3 {
+              align-self: flex-end;
+              height: 24px;
+              padding: 0px 20px;
+              border-radius: 4px;
+              font-weight: 500;
+              background-color: yellow;
+              width: min-content;
+              
+              @include mobile{
+                font-size: 17px;
+              }
+            }
+
             p {
               font-size: 13px;
               text-align: justify;
