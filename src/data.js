@@ -79,6 +79,15 @@ export const frontendData = [
 
 export const worksData = [
   {
+    id: 0,
+    title: "BLOCQBOOK",
+    web3: true,
+    desc: "Winner of 3 prizes in ETHGlobal hackaton. Web3 app for retrieving transactions, contact management, instant messaging and peer2peer file transfer. Your contact-data is 100% owned by you and upwards compatible. Retrieving transactions using Covalent, storing data in Ceramic database and sending files and messages through XMTP (all descentralized protocols).",
+    img: "assets/blocqbook.JPG",
+    demo: "https://ethglobal.com/showcase/blocq-book-kw8i2",
+    github: "https://github.com/3lLobo/hacqFS",
+  },
+  {
     id: 1,
     title: "RAFFLE",
     web3: true,
