@@ -34,13 +34,28 @@ export const web3Data = [
   },
   {
     id: 2,
-    title: "WEB3 JS",
-    img: "assets/web3.JPG",
+    title: "ETHERS JS",
+    img: "assets/ethers.jpg",
   },
   {
     id: 3,
-    title: "ETHERS JS",
-    img: "assets/ethers.jpg",
+    title: "HARDHAT",
+    img: "assets/hardhat.png",
+  },
+  {
+    id: 4,
+    title: "CERAMIC",
+    img: "assets/ceramic.png",
+  },
+  {
+    id: 5,
+    title: "IFPS",
+    img: "assets/ipfs.png",
+  },
+  {
+    id: 3,
+    title: "SUPERFLUID",
+    img: "assets/superfluid.png",
   },
 ];
 

@@ -8,36 +8,36 @@ import {
 } from '../../data';
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("web3");
   const [data, setData] = useState([]);
   const list = [
+    {
+      id: "web3",
+      title: "Web3"
+    },
+    {
+      id: "frontend",
+      title: "Front End"
+    },
     {
       id: "backend",
       title: "Back End"
     },   
-    {
-      id: "frontend",
-      title: "Front End"
-    },   
-    {
-      id: "web3",
-      title: "Crypto"
-    },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case 'backend':
-        setData(backendData)
-        break;
       case 'web3':
         setData(web3Data)
         break;
       case 'frontend':
         setData(frontendData)
         break;
-      default:
+      case 'backend':
         setData(backendData)
+        break;
+      default:
+        setData(web3Data)
         break;
     }
   }, [selected]);
