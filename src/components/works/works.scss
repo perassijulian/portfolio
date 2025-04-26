@@ -8,9 +8,15 @@
   position: relative;
 
   .arrow {
-    height: 50px;
+    height: 60px;
     position: absolute;
     cursor: pointer;
+
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     // @include mobile {
     //   display: none;
@@ -19,7 +25,7 @@
     &.left {
       left: 100px;
       transform: rotateY(180deg);
-      
+
       @include mobile {
         left: 0px;
       }
@@ -27,7 +33,7 @@
 
     &.right {
       right: 100px;
-      
+
       @include mobile {
         right: 0px;
       }
@@ -39,9 +45,9 @@
     display: flex;
     position: absolute;
     left: 0;
-    transition: all 1s ease-out;
+    transition: transform 0.5s ease-in-out;
 
-    @include bigScreen{
+    @include bigScreen {
       height: 500px;
     }
 
@@ -56,105 +62,96 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
 
       .item {
-        width: 700px;
+        width: 900px;
         height: 100%;
-        background-color: white;
-        border-radius: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 20px;
+        transition: all 0.3s ease;
 
-        @include bigScreen{
+        &:hover {
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        @include bigScreen {
           width: 1000px;
         }
 
         @include mobile {
-          flex-direction:column-reverse;
+          flex-direction: column-reverse;
           justify-content: center;
           width: 80%;
-          height: 80%;
+          height: auto;
           margin: 15px 0;
+
+          .left {
+            flex: 2;
+          }
+
+          .right {
+            flex: 1;
+          }
         }
 
         .left {
           flex: 4;
-          height: 100%;
           display: flex;
-          align-items: center;
+          flex-direction: column;
           justify-content: center;
+          padding: 20px;
 
           .leftContainer {
-            width: 90%;
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
             h2 {
-              font-size: 20px;
-              text-align: center;
-
-              @include bigScreen{
-                font-size: $sSize;
-              }
-
-              @include mobile{
-                font-size: 18px;
-              }
+              font-size: 28px;
+              font-weight: 600;
+              text-align: left;
+              margin-bottom: 10px;
             }
 
             h3 {
-              align-self: flex-end;
-              height: 24px;
-              padding: 0px 20px;
+              background-color: #efefef;
+              color: #333;
+              font-size: 14px;
               border-radius: 4px;
-              font-weight: 500;
-              background-color: yellow;
-              width: min-content;
-              
-              @include mobile{
-                font-size: 17px;
-              }
+              padding: 4px 8px;
+              width: fit-content;
+              margin-bottom: 10px;
             }
 
             p {
-              font-size: 13px;
-              text-align: justify;
-
-              @include bigScreen{
-                font-size: 17px;
-              }
-
-              @include mobile{
-                font-size: 15px;
-              }
+              font-size: 16px;
+              color: #555;
+              text-align: left;
+              line-height: 1.6;
+              margin-bottom: 20px;
             }
 
-            .buttons{
-              width: 100%;
+            .buttons {
               display: flex;
-              justify-content: space-around;
+              gap: 12px;
 
-              .demo{
-                background-color: green;
-              }
-
-              .github{
-                background-color: black;
-              }
-
-              button{
-                width: 100px;
-                height: 24px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                color: white;
+              button {
+                background: none;
+                border: 1px solid #333;
+                color: #333;
+                padding: 8px 16px;
+                border-radius: 6px;
                 font-weight: 500;
+                cursor: pointer;
+                transition: background 0.3s;
 
-                @include bigScreen{
+                &:hover {
+                  background-color: #333;
+                  color: #fff;
+                }
+                @include bigScreen {
                   width: 125px;
                   height: 30px;
                   font-size: 15px;
@@ -163,24 +160,14 @@
             }
           }
         }
-        .right {
-          flex: 8;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          overflow: hidden;
-          @include mobile {
-            flex: 2;
-          }
 
+        .right {
+          flex: 6;
           img {
-            width: 600px;
-            transform: rotate(-10deg);
-            
-            @include mobile {
-              width: 100%;
-            }
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transform: none; // no rotation
           }
         }
       }
