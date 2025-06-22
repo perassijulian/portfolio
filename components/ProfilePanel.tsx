@@ -4,7 +4,7 @@ import ProfileHeader from "./ProfileHeader";
 
 export default function ProfilePanel() {
   return (
-    <div>
+    <div className="px-10 py-20">
       <ProfileHeader />
       <NavigationLinks />
       <ContactLinks />
