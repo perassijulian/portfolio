@@ -7,6 +7,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --foreground-secondary: #4b5563;
+  --accent: #59dbd4;
+  --accent-muted: #1a334d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +16,8 @@
     --background: #0f172a;
     --foreground: #94a4b8;
     --foreground-secondary: #dde3ee;
+    --accent: #59dbd4;
+    --accent-muted: #1a334d;
   }
 }
 

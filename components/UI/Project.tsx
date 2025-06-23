@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Card from "./Card";
+import Pill from "./Pill";
 
 interface ProjectProps {
   id: number;
@@ -9,6 +10,7 @@ interface ProjectProps {
   alt: string;
   demo?: string;
   github: string;
+  tags: string[];
 }
 
 export default function Project({
@@ -19,6 +21,7 @@ export default function Project({
   alt,
   demo = "",
   github,
+  tags,
 }: ProjectProps) {
   return (
     <Card>
@@ -29,6 +32,11 @@ export default function Project({
         <div className="w-2/3">
           <h1 className="text-foreground-secondary">{title}</h1>
           <p className="mt-4 text-justify">{desc}</p>
+          <div className="flex gap-2 mt-4">
+            {tags.map((tag) => (
+              <Pill id={id}>{tag}</Pill>
+            ))}
+          </div>
         </div>
       </div>
     </Card>

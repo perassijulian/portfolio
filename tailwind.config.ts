@@ -6,6 +6,8 @@ const config: Config = {
     extend: {
       colors: {
         "foreground-secondary": "var(--foreground-secondary)",
+        accent: "var(--accent)",
+        "accent-muted": "var(--accent-muted)",
       },
     },
   },

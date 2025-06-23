@@ -11,6 +11,7 @@ export default function ProjectsSection() {
       alt: "landing page and booking system",
       demo: "https://hostel-perassi.vercel.app/",
       github: "https://github.com/perassijulian/hostel-snowpark",
+      tags: ["tag1", "tag2"],
     },
     {
       id: 1,
@@ -20,6 +21,7 @@ export default function ProjectsSection() {
       alt: "proof of product with ceramic for polygon",
       demo: "https://ethglobal.com/showcase/proof-of-product-pop-web3-commerce-0uhew",
       github: "https://github.com/brandinate/Brandinate-Monorepo",
+      tags: ["tag1", "tag2", "tag3"],
     },
   ];
   return (
@@ -34,6 +36,7 @@ export default function ProjectsSection() {
             alt={p.alt}
             demo={p.demo}
             github={p.github}
+            tags={p.tags}
           />
         );
       })}
