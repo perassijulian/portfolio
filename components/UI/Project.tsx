@@ -41,8 +41,8 @@ export default function Project({
           </h1>
           <p className="mt-4 text-justify">{desc}</p>
           <div className="flex gap-2 mt-4">
-            {tags.map((tag) => (
-              <Pill id={id}>{tag}</Pill>
+            {tags.map((tag, i) => (
+              <Pill key={`${id}-${i}`}>{tag}</Pill>
             ))}
           </div>
         </div>

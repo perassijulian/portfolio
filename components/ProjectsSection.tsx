@@ -27,7 +27,10 @@ export default function ProjectsSection() {
     <div className="relative group/list">
       {projectsData.map((p) => {
         return (
-          <div className="group/item transition duration-300 group-hover/list:opacity-40 hover:!opacity-100">
+          <div
+            key={p.id}
+            className="group/item transition duration-300 group-hover/list:opacity-40 hover:!opacity-100"
+          >
             <Project
               id={p.id}
               title={p.title}
