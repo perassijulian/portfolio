@@ -5,7 +5,7 @@ import TechStackSection from "./TechStackSection";
 
 export default function ContentPanel() {
   return (
-    <div>
+    <div className="px-10 py-20">
       <AboutSection />
       <ExperienceSection />
       <ProjectsSection />
