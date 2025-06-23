@@ -1,4 +1,3 @@
-import Card from "./UI/Card";
 import Project from "./UI/Project";
 
 export default function ProjectsSection() {
@@ -25,19 +24,21 @@ export default function ProjectsSection() {
     },
   ];
   return (
-    <div>
+    <div className="relative group/list">
       {projectsData.map((p) => {
         return (
-          <Project
-            id={p.id}
-            title={p.title}
-            desc={p.desc}
-            img={p.img}
-            alt={p.alt}
-            demo={p.demo}
-            github={p.github}
-            tags={p.tags}
-          />
+          <div className="group/item transition duration-300 group-hover/list:opacity-40 hover:!opacity-100">
+            <Project
+              id={p.id}
+              title={p.title}
+              desc={p.desc}
+              img={p.img}
+              alt={p.alt}
+              demo={p.demo}
+              github={p.github}
+              tags={p.tags}
+            />
+          </div>
         );
       })}
     </div>
