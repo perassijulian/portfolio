@@ -2,7 +2,7 @@ import { AtSign, Github, Instagram, Linkedin } from "lucide-react";
 
 export default function ContactLinks() {
   return (
-    <div className="flex items-center justify-center gap-4 mt-4">
+    <div className="flex items-center gap-4 mt-4">
       <a
         href="https://github.com/perassijulian"
         target="_blank"
