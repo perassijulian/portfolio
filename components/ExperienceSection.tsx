@@ -5,17 +5,38 @@ export default function ExperienceSection() {
   const experienceData = [
     {
       id: 0,
-      title: "Booking",
-      desc: "Landing page and booking system for a hostel and snowpark project. Built with Next.js and TailwindCSS, it allows users to explore available cabins, dorms, and snowpark passes. Booking requests are handled through a custom API using Prisma and SQLite. Designed with future scalability in mind, with a focus on clean UX/UI and easy backend migration to PostgreSQL if needed.",
-      period: "JULY - DEC 2023",
-      tags: ["tag1", "tag2"],
+      title: "Password Manager",
+      desc: "Built a full-stack password manager with 2FA, encrypted credential storage, rate limiting, and strong security practices. Designed with Next.js, Prisma, and Redis, featuring a clean, responsive UI.",
+      period: "2025",
+      tags: ["Next.js", "Prisma", "2FA", "Redis", "Security"],
     },
     {
       id: 1,
-      title: "Proof of Product",
-      desc: "Winner of Polygon 2nd prize, Ceramic 1st prize and Tableland Pool Prize in ETHOnline hackaton. Commerce is a massive part of our online identity, but currently, there is no standard for representing real-world products on blockchain applications. Proof of Product (POP) is a new, open standard for Web3 commerce — authentic, composable, and verifiable product identity.",
-      period: "JULY - DEC 2023",
-      tags: ["tag1", "tag2", "tag3"],
+      title: "Snowpark Hostel Booking",
+      desc: "A booking system for a snowpark-hostel hybrid project. Includes accommodation search, booking flows, admin panel, and volunteer sign-ups. Built with scalability and real-world UX in mind.",
+      period: "2025",
+      tags: ["Full-stack", "Next.js", "Tailwind", "PostgreSQL", "UX"],
+    },
+    {
+      id: 2,
+      title: "Web3 Developer (Freelance & Hackathons)",
+      desc: "Participated in ETHGlobal hackathons and won prizes building apps with smart contracts, Ceramic, and Filecoin. Delivered MVPs under tight deadlines and collaborated in agile teams.",
+      period: "JAN – OCT 2022",
+      tags: ["Web3", "Hackathons", "Ceramic", "ETHGlobal"],
+    },
+    {
+      id: 3,
+      title: "Independent Work & Self-Learning",
+      desc: "While working abroad across multiple industries, I taught myself web development and cybersecurity, building side projects and developing strong adaptability and problem-solving skills.",
+      period: "2019 – 2025",
+      tags: ["Self-taught", "Cybersecurity", "Adaptability"],
+    },
+    {
+      id: 4,
+      title: "Manufacturing & Process Engineering",
+      desc: "Held engineering and leadership roles in factories. Implemented ISO 9001, optimized production lines, created SOPs, and led teams of 30+. Built a strong foundation in systems thinking and process design.",
+      period: "2015 – 2019",
+      tags: ["Engineering", "ISO 9001", "Lean", "Team Leadership"],
     },
   ];
 
