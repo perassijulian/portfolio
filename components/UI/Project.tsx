@@ -25,8 +25,8 @@ export default function Project({
 }: ProjectProps) {
   return (
     <Card>
-      <div className="flex items-center gap-4">
-        <div className="w-1/3">
+      <div className="flex items-center mt-4 gap-4 md:flex-row flex-col-reverse">
+        <div className="md:w-1/3">
           <Image
             className="rounded-lg border"
             src={img}
@@ -35,7 +35,7 @@ export default function Project({
             height={600}
           />
         </div>
-        <div className="w-2/3">
+        <div className="md:w-2/3">
           <h1 className="text-foreground-secondary font-bold group-hover:text-accent transition-colors duration-300">
             {title}
           </h1>
