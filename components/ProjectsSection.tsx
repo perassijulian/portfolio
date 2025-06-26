@@ -24,7 +24,7 @@ export default function ProjectsSection() {
     },
   ];
   return (
-    <div className="relative group/list">
+    <section id="projects" className="relative group/list">
       {projectsData.map((p) => {
         return (
           <div
@@ -44,6 +44,6 @@ export default function ProjectsSection() {
           </div>
         );
       })}
-    </div>
+    </section>
   );
 }

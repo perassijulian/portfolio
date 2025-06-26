@@ -41,7 +41,7 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <div className="mt-32">
+    <section id="experience" className="mt-32">
       {experienceData.map((exp) => (
         <Experience
           id={exp.id}
@@ -51,6 +51,6 @@ export default function ExperienceSection() {
           tags={exp.tags}
         />
       ))}
-    </div>
+    </section>
   );
 }

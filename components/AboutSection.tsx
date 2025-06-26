@@ -1,6 +1,6 @@
 export default function AboutSection() {
   return (
-    <div className="space-y-2">
+    <section id="about" className="space-y-2">
       <p>
         I’m a <strong>self-taught developer</strong> with a passion for building
         thoughtful, performant interfaces—where clean design meets solid
@@ -29,6 +29,6 @@ export default function AboutSection() {
         new, or reverse engineering a web app for fun. I love working with
         people who care deeply about what they build—and why it matters.
       </p>
-    </div>
+    </section>
   );
 }
