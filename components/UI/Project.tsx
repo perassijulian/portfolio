@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Card from "./Card";
 import Pill from "./Pill";
+import { ArrowUpRight } from "lucide-react";
 
 interface ProjectProps {
   id: number;
@@ -38,6 +39,10 @@ export default function Project({
         <div className="md:w-2/3">
           <h1 className="text-foreground-secondary font-bold group-hover:text-accent transition-colors duration-300">
             {title}
+            <ArrowUpRight
+              size={15}
+              className="inline-block ml-1 group-hove:text-accent group-hover:-translate-y-1 transition-transform duration-300"
+            />
           </h1>
           <p className="mt-4 text-justify">{desc}</p>
           <div className="flex gap-2 mt-4">
