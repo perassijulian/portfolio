@@ -22,7 +22,9 @@ export function Experience({ id, title, desc, period, tags }: ExperienceProps) {
           {tags.length > 0 && (
             <div className="flex flex-wrap gap-2 mt-4">
               {tags.map((t, i) => (
-                <Pill key={`${id}-${i}`}>{t}</Pill>
+                <Pill tagKey={`${id}-${i}`} key={`${id}-${i}`}>
+                  {t}
+                </Pill>
               ))}
             </div>
           )}
