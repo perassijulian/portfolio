@@ -42,15 +42,19 @@ export default function ExperienceSection() {
 
   return (
     <section id="experience" className="mt-32">
-      {experienceData.map((exp) => (
-        <Experience
-          id={exp.id}
-          title={exp.title}
-          desc={exp.desc}
-          period={exp.period}
-          tags={exp.tags}
-        />
-      ))}
+      <ul className="space-y-6">
+        {experienceData.map(({ id, title, desc, period, tags }) => (
+          <li key={id}>
+            <Experience
+              id={id}
+              title={title}
+              desc={desc}
+              period={period}
+              tags={tags}
+            />
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }
