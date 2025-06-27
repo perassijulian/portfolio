@@ -16,7 +16,7 @@ export default function ProjectsSection() {
       id: 1,
       title: "Password Manager with 2FA",
       desc: "Modern password manager with 2FA, rate limiting, and strong password hashing. Built using Next.js 15+, Prisma, and Upstash Redis. Includes features like OTP setup, strength validation, and secure credential handling.",
-      img: "/portfolio/password.jpeg",
+      img: "/portfolio/booking.jpeg",
       alt: "Secure password manager app",
       demo: "https://password-manager-jp.vercel.app/",
       github: "https://github.com/perassijulian/password-manager",
