@@ -9,6 +9,9 @@ const config: Config = {
         accent: "var(--accent)",
         "accent-muted": "var(--accent-muted)",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"],
+      },
     },
   },
   plugins: [],
