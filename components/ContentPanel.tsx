@@ -1,5 +1,6 @@
 import AboutSection from "./AboutSection";
 import ExperienceSection from "./ExperienceSection";
+import Footer from "./Footer";
 import ProjectsSection from "./ProjectsSection";
 import TechStackSection from "./TechStackSection";
 
@@ -10,6 +11,7 @@ export default function ContentPanel() {
       <ExperienceSection />
       <ProjectsSection />
       <TechStackSection />
+      <Footer />
     </div>
   );
 }
