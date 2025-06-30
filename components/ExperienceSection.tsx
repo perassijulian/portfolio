@@ -3,7 +3,7 @@ import { Experience } from "./UI/Experience";
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="mt-32">
+    <section id="experience">
       <ul className="space-y-6">
         {experienceData.map(({ id, title, desc, period, tags }) => (
           <li key={id}>

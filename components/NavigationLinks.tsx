@@ -20,7 +20,7 @@ export default function NavigationLinks() {
   };
 
   return (
-    <nav className="flex flex-col items-start gap-4 mt-8 ml-2 text-sm font-medium tracking-widest">
+    <nav className="flex flex-col items-start gap-4 ml-2 text-sm font-medium tracking-widest">
       {sections.map((section) => (
         <button
           key={section.id}

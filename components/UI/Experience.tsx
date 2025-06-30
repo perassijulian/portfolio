@@ -13,7 +13,7 @@ export function Experience({ id, title, desc, period, tags }: ExperienceProps) {
   return (
     <Card>
       <div className="flex">
-        <div className="w-1/3 text-sm p-2">{period}</div>
+        <div className="w-1/3 text-sm py-2">{period}</div>
         <div className="w-2/3">
           <h1 className="text-foreground-secondary font-bold group-hover:text-accent transition-colors duration-300">
             {title}

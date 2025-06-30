@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-8 text-sm text-foreground-secondary flex flex-col items-center gap-4">
+    <footer className="text-sm text-foreground-secondary flex flex-col items-center gap-4 pb-8">
       <div className="flex gap-6 md:hidden">
         <a
           href="https://github.com/perassijulian"

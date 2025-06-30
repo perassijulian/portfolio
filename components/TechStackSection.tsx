@@ -3,7 +3,7 @@ import Pill from "./UI/Pill";
 
 export default function TechStackSection() {
   return (
-    <section id="tech-stack" className="my-32">
+    <section id="tech-stack" className="px-2">
       <h2 className="text-2xl font-bold mb-6">Tech Stack</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {techStack &&
