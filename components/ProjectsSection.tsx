@@ -1,5 +1,6 @@
 import { projectsData } from "@/data/projects";
 import Project from "./UI/Project";
+import UnderlineButton from "./UI/UnderlineButton";
 
 export default function ProjectsSection() {
   return (
@@ -23,6 +24,7 @@ export default function ProjectsSection() {
           </div>
         );
       })}
+      <UnderlineButton href="/archive">TAKE ME TO THE ARCHIVE</UnderlineButton>
     </section>
   );
 }
