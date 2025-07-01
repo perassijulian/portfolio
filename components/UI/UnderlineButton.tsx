@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Link from "next/link";
 
 interface UnderlineButtonProps {
@@ -6,6 +7,7 @@ interface UnderlineButtonProps {
   onClick?: () => void;
   isActive?: boolean;
   href?: string;
+  className?: string;
 }
 
 export default function UnderlineButton({
@@ -14,10 +16,13 @@ export default function UnderlineButton({
   onClick,
   isActive = false,
   href,
+  className,
 }: UnderlineButtonProps) {
-  const className = `relative group hover:text-foreground-secondary ${
-    isActive ? "text-foreground-secondary" : ""
-  }`;
+  const classNameApplied = clsx(
+    "relative group hover:text-foreground-secondary",
+    isActive && "text-foreground-secondary",
+    className
+  );
 
   const underline = (
     <span
@@ -29,7 +34,7 @@ export default function UnderlineButton({
 
   if (href) {
     return (
-      <Link href={href} key={tagKey} className={className}>
+      <Link href={href} className={classNameApplied}>
         {children}
         {underline}
       </Link>
@@ -37,7 +42,7 @@ export default function UnderlineButton({
   }
 
   return (
-    <button key={tagKey} onClick={onClick} className={className}>
+    <button key={tagKey} onClick={onClick} className={classNameApplied}>
       {children}
       {underline}
     </button>
