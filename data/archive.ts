@@ -1,0 +1,51 @@
+export const archiveData = [
+  {
+    id: 1,
+    title: "Proof of Product",
+    desc: "Winner of Polygon's 2nd prize, Ceramic's 1st prize, and the Tableland Pool Prize at the ETHOnline hackathon. Proof of Product (POP) introduces a new open standard for Web3 commerce, enabling the creation of authentic, composable, and verifiable product identities on the blockchain.",
+    tags: ["Web3", "Blockchain", "Commerce", "ETHOnline", "Hackathon"],
+    link: "https://ethglobal.com/showcase/proof-of-product-pop-web3-commerce-0uhew",
+  },
+  {
+    id: 2,
+    title: "BlocqBook",
+    desc: "Winner of three awards at the ETHGlobal hackathon, BlocqBook is a Web3 application that integrates transaction retrieval, contact management, instant messaging, and peer-to-peer file transfer. With full data ownership and compatibility, it uses Covalent for transaction retrieval, Ceramic for data storage, and XMTP for messaging and file sharing.",
+    tags: ["Web3", "ETHGlobal", "Messaging", "Decentralized", "FileTransfer"],
+    link: "https://ethglobal.com/showcase/blocq-book-kw8i2",
+  },
+  {
+    id: 3,
+    title: "Raffle",
+    desc: "A blockchain-based raffle system that defines entrance fees and time intervals during deployment. Powered by Chainlink’s randomness and automated by its keepers, the smart contracts are written in Solidity and deployed on the Rinkeby test network. The frontend is built with Next.js and styled using Tailwind CSS.",
+    tags: ["Blockchain", "Solidity", "Chainlink", "Rinkeby", "SmartContracts"],
+    link: "https://github.com/perassijulian/raffle",
+  },
+  {
+    id: 4,
+    title: "NFT Marketplace",
+    desc: "An NFT marketplace that supports the creation, buying, and selling of NFTs. Metadata and multimedia content are stored on IPFS. The smart contracts are written in Solidity, and the frontend is developed using Next.js and Tailwind. Ethers.js is used for blockchain interaction, with Hardhat serving as the development and testing environment.",
+    tags: ["NFT", "Solidity", "Web3", "IPFS", "Marketplace"],
+    link: "https://github.com/perassijulian/nft-marketplace",
+  },
+  {
+    id: 5,
+    title: "Ecommerce Shop",
+    desc: "A full-stack eCommerce platform built with the MERN stack, allowing users to register, log in using JWT authentication, and browse products categorized for easier navigation. It features a shopping cart and integrates Stripe for secure payments.",
+    tags: ["Ecommerce", "MERN", "JWT", "Stripe", "FullStack"],
+    link: "https://github.com/perassijulian/ecommerce",
+  },
+  {
+    id: 6,
+    title: "Blog",
+    desc: "A blog platform built with the MERN stack that supports user registration with encrypted passwords (via bcrypt). Logged-in users can create posts with images and view articles. It also allows users to filter posts by author or category using database queries.",
+    tags: ["MERN", "Blog", "Authentication", "bcrypt", "FullStack"],
+    link: "https://github.com/perassijulian/blog-upwork",
+  },
+  {
+    id: 7,
+    title: "Booking",
+    desc: "A clone of a booking website developed with the MERN stack. It supports user registration and login using JWT, with state management handled by useContext. Users can register lodgings and rooms, and reservations are made for specific dates, preventing double bookings.",
+    tags: ["MERN", "Booking", "JWT", "StateManagement", "FullStack"],
+    link: "https://github.com/perassijulian/booking",
+  },
+];
