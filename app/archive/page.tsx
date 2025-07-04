@@ -1,19 +1,13 @@
+import GoBackButton from "@/components/UI/GoBackButton";
 import Pill from "@/components/UI/Pill";
 import { archiveData } from "@/data/archive";
-import { ExternalLink, MoveLeft } from "lucide-react";
-import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 import React from "react";
 
 export default function Archive() {
   return (
     <div className="h-screen w-full p-4 md:p-20">
-      <Link
-        href="/"
-        className="group text-accent font-bold flex items-center gap-1 text-2xl "
-      >
-        <MoveLeft className="transition-transform duration-300 ease-in-out group-hover:-translate-x-1" />{" "}
-        Julian Perassi
-      </Link>
+      <GoBackButton />
       <h1 className="text-4xl text-foreground-secondary font-bold">
         Old Projects
       </h1>
