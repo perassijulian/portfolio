@@ -17,8 +17,6 @@ export default function ProjectsSection() {
               desc={p.desc}
               img={p.img}
               alt={p.alt}
-              demo={p.demo}
-              github={p.github}
               tags={p.tags}
             />
           </div>

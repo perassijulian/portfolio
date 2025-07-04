@@ -9,8 +9,6 @@ interface ProjectProps {
   desc: string;
   img: string;
   alt: string;
-  demo?: string;
-  github: string;
   tags: string[];
 }
 
@@ -20,8 +18,6 @@ export default function Project({
   desc,
   img,
   alt,
-  demo = "",
-  github,
   tags,
 }: ProjectProps) {
   return (
