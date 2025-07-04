@@ -2,7 +2,7 @@ import GoBackButton from "@/components/UI/GoBackButton";
 import LightboxGallery from "@/components/UI/LightboxGallery";
 import Pill from "@/components/UI/Pill";
 import { projectsData } from "@/data/projects";
-import { Github, Wallpaper, Youtube } from "lucide-react";
+import { CloudLightning, Github, Wallpaper, Youtube } from "lucide-react";
 
 type Props = {
   params: { id: string };
@@ -11,12 +11,25 @@ type Props = {
 export default function ProjectPage({ params }: Props) {
   const index = parseInt(params.id, 10);
 
-  const images = projectsData.map((p) => ({ src: p.img, alt: p.alt }));
-
   const validIds = projectsData.map((p) => p.id);
-  if (!validIds.includes(index)) return <div>404</div>;
 
-  const { title, desc, img, alt, demo, github, tags } = projectsData[index];
+  if (!validIds.includes(index))
+    return (
+      <div className="flex flex-col items-center w-full">
+        <div className="w-full max-w-3xl my-4 p-4">
+          <GoBackButton />
+          <h3 className="text-foreground-secondary text-lg flex gap-1 text-center mt-4">
+            404 - Page not found <CloudLightning />
+          </h3>
+          <p>
+            This page is not available. You can try again from the homepage.
+          </p>
+        </div>
+      </div>
+    );
+
+  const { title, desc, demo, images, github, tags } = projectsData[index];
+
   return (
     <div className="flex flex-col items-center w-full">
       <div className="w-full max-w-3xl my-4 p-4">
