@@ -9,9 +9,7 @@ type Props = {
 };
 
 export default function ProjectPage({ params }: Props) {
-  const index = parseInt(params.id, 10);
-
-  const project = projectsData.find((p) => p.id === index);
+  const project = projectsData.find((p) => p.id === params.id);
 
   if (!project) {
     return (
@@ -29,7 +27,7 @@ export default function ProjectPage({ params }: Props) {
     );
   }
 
-  const { title, longDesc, demo, images, github, youtube, tags } = project;
+  const { id, title, longDesc, demo, images, github, youtube, tags } = project;
 
   return (
     <div className="flex flex-col items-center w-full">
@@ -43,7 +41,7 @@ export default function ProjectPage({ params }: Props) {
           <p>{longDesc}</p>
           <div className="flex gap-2">
             {tags.map((t, i) => (
-              <Pill tagKey={`${index}-${i}`} key={`${index}-${i}`}>
+              <Pill tagKey={`${id}-${i}`} key={`${id}-${i}`}>
                 {t}
               </Pill>
             ))}

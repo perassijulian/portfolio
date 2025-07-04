@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 interface ProjectProps {
-  id: number;
+  id: string;
   title: string;
   desc: string;
   img: string;

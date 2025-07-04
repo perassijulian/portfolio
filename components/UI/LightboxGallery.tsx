@@ -17,10 +17,10 @@ type Props = {
 };
 
 export default function LightboxGallery({ images }: Props) {
-  if (images.length === 0) return null;
-
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
+
+  if (images.length === 0) return null;
 
   const [primary, ...thumbnails] = images;
 
@@ -48,7 +48,7 @@ export default function LightboxGallery({ images }: Props) {
             key={index}
             src={img.src}
             alt={img.alt}
-            className="w-full h-48 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105"
+            className="w-full h-24 object-cover rounded-lg cursor-pointer transition-transform hover:scale-105"
             onClick={() => {
               setOpen(true);
               setIndex(index + 1); // +1 to match original index
