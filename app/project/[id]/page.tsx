@@ -5,11 +5,12 @@ import { projectsData } from "@/data/projects";
 import { CloudLightning, Github, Wallpaper, Youtube } from "lucide-react";
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
-export default function ProjectPage({ params }: Props) {
-  const project = projectsData.find((p) => p.id === params.id);
+export default async function ProjectPage({ params }: Props) {
+  const { id } = await params;
+  const project = projectsData.find((p) => p.id === id);
 
   if (!project) {
     return (
@@ -27,7 +28,7 @@ export default function ProjectPage({ params }: Props) {
     );
   }
 
-  const { id, title, longDesc, demo, images, github, youtube, tags } = project;
+  const { title, longDesc, demo, images, github, youtube, tags } = project;
 
   return (
     <div className="flex flex-col items-center w-full">
