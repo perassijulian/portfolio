@@ -11,9 +11,9 @@ type Props = {
 export default function ProjectPage({ params }: Props) {
   const index = parseInt(params.id, 10);
 
-  const validIds = projectsData.map((p) => p.id);
+  const project = projectsData.find((p) => p.id === index);
 
-  if (!validIds.includes(index))
+  if (!project) {
     return (
       <div className="flex flex-col items-center w-full">
         <div className="w-full max-w-3xl my-4 p-4">
@@ -27,8 +27,9 @@ export default function ProjectPage({ params }: Props) {
         </div>
       </div>
     );
+  }
 
-  const { title, desc, demo, images, github, tags } = projectsData[index];
+  const { title, longDesc, demo, images, github, youtube, tags } = project;
 
   return (
     <div className="flex flex-col items-center w-full">
@@ -39,7 +40,7 @@ export default function ProjectPage({ params }: Props) {
           <div className="max-w-lg mx-auto">
             <LightboxGallery images={images} />
           </div>
-          <p>{desc}</p>
+          <p>{longDesc}</p>
           <div className="flex gap-2">
             {tags.map((t, i) => (
               <Pill tagKey={`${index}-${i}`} key={`${index}-${i}`}>
@@ -48,33 +49,39 @@ export default function ProjectPage({ params }: Props) {
             ))}
           </div>
           <div className="flex items-center justify-center flex-wrap gap-4 pt-4">
-            <a
-              className="p-2 text-foreground-secondary hover:text-accent"
-              aria-label="Github link"
-              href={github}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Github />
-            </a>
-            <a
-              className="p-2 text-foreground-secondary hover:text-accent"
-              aria-label="Youtube link"
-              href={github}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Youtube />
-            </a>
-            <a
-              className="p-2 text-foreground-secondary hover:text-accent"
-              aria-label="Vercel link"
-              href={demo}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Wallpaper />
-            </a>
+            {github && (
+              <a
+                className="p-2 text-foreground-secondary hover:text-accent"
+                aria-label="Github link"
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github />
+              </a>
+            )}
+            {youtube && (
+              <a
+                className="p-2 text-foreground-secondary hover:text-accent"
+                aria-label="Youtube link"
+                href={youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Youtube />
+              </a>
+            )}
+            {demo && (
+              <a
+                className="p-2 text-foreground-secondary hover:text-accent"
+                aria-label="Vercel link"
+                href={demo}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Wallpaper />
+              </a>
+            )}
           </div>
         </div>
       </div>

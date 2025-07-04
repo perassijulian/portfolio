@@ -14,9 +14,9 @@ export default function ProjectsSection() {
             <Project
               id={p.id}
               title={p.title}
-              desc={p.desc}
-              img={p.img}
-              alt={p.alt}
+              desc={p.shortDesc}
+              img={p.images[0].src}
+              alt={p.images[0].alt}
               tags={p.tags}
             />
           </div>
