@@ -35,11 +35,23 @@ export const projectsData = [
     shortDesc:
       "Full-stack snowpark-hostel booking system with custom reservations, volunteer sign-up, and admin panel. Built with Next.js, TailwindCSS, and secured with NextAuth.",
     longDesc:
-      "Full-stack booking system for a hybrid snowpark-hostel. Built with Next.js and TailwindCSS, it includes a custom booking flow, volunteer sign-up, and an admin panel to manage reservations. Auth is handled via NextAuth with secure middleware and tested with Vitest.",
+      "A full-stack booking platform for a hybrid snowpark-hostel, built with Next.js 15, TailwindCSS, and Prisma. It features a custom booking flow with date and guest availability validation, volunteer sign-up handling, and an admin dashboard to manage accommodations and reservations. Authentication is powered by NextAuth with protected routes via middleware. All inputs are validated using Zod, and key flows are covered with unit tests using Vitest.",
     images: [
       {
-        src: "/portfolio/hostel-snowpark/booking.jpeg",
-        alt: "Booking system for snowpark and hostel",
+        src: "/portfolio/hostel-snowpark/accommodation-example.png",
+        alt: "Example of one of our accommodations",
+      },
+      {
+        src: "/portfolio/hostel-snowpark/admin-panel.png",
+        alt: "Accommodation section in our admin panel",
+      },
+      {
+        src: "/portfolio/hostel-snowpark/book-your-stay.png",
+        alt: "Booking path to search our accommodations",
+      },
+      {
+        src: "/portfolio/hostel-snowpark/our-accommodations.png",
+        alt: "Showcase of all our accommodations",
       },
     ],
     demo: "https://hostel-perassi.vercel.app/",
